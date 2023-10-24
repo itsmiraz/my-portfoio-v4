@@ -1,15 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import blueCoverOverlyy from '../../../public/Assets/blue-background-overlay.webp'
 import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
 import Link from 'next/link';
 import { SocailMediaData } from '@/Constants/Constants';
 
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { slideAnimation } from '@/lib/motion';
+
 
 const Contact = () => {
+
+
+
+
+
+
+
+    const [sectionRef, inView] = useInView({
+        triggerOnce: true, // Trigger animation once when it enters the viewport
+        threshold: 0.2, // Adjust this threshold as needed
+    });
+
+    // State to control whether animations should play
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setAnimate(true);
+        }
+    }, [inView]);
+
+
+
     return (
-        <div className='flex pt-40  relative justify-center items-center'>
-            <div className='max-w-[1200px] bg-[#05050e50] backdrop-blur-md relative z-20 p-10 border-[#FFFFFF] border-opacity-10 border rounded-md grid grid-cols-2 gap-6'>
+        <div ref={sectionRef} className='flex pt-40  relative justify-center items-center'>
+            <motion.div
+
+                initial='initial'
+                animate={animate ? 'animate' : 'initial'}
+                exit='exit'
+                variants={slideAnimation('up')}
+                className='max-w-[1200px] mx-auto bg-[#05070e5d] backdrop-blur-md relative z-20 p-10 border-[#FFFFFF] border-opacity-10 border rounded-md grid grid-cols-2 gap-6'>
                 <div className=''>
                     <h2 className='head-text'>Contact Me</h2>
                     <p className='small-text mt-4'>
@@ -53,7 +86,7 @@ const Contact = () => {
                     </div>
                     <button className='bg-[#0065C2] text-white px-3 py-1 rounded mt-4'>Submit</button>
                 </div>
-            </div>
+            </motion.div>
             <Image className='absolute' src={blueCoverOverlyy} alt='blue-overlay' />
         </div>
     );
