@@ -35,6 +35,7 @@ export default function Home() {
           property="og:url"
           content="https://mirajhossen.vercel.app/"
         />
+        <meta name="google-site-verification" content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://mirajhossen.vercel.app/" />
       </Head>
