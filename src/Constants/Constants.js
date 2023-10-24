@@ -37,7 +37,53 @@ import firebase from '../../public/Assets/auth/firebase.webp'
 import auth0 from '../../public/Assets/auth/auth0.webp'
 
 
-export const Auth = [
+
+//Tools
+import bitbucket from '../../public/Assets/tools/bitbucket.webp'
+import github from '../../public/Assets/tools/github.webp'
+import npm from '../../public/Assets/tools/npm.webp'
+import postman from '../../public/Assets/tools/postman.webp'
+import vscode from '../../public/Assets/tools/vs-code.webp'
+import slack from '../../public/Assets/tools/slack.webp'
+import yarn from '../../public/Assets/tools/yarn.webp'
+
+
+
+
+export const ToolsConstant = [
+  
+  {
+    img: bitbucket,
+    url:'https://bitbucket.org/product'
+  },
+  
+  {
+    img: github,
+    url:'https://github.com/'
+  },
+  {
+    img: postman,
+    url:'https://www.postman.com/'
+  },
+  {
+    img: npm,
+    url:'https://www.npmjs.com/'
+  },
+  {
+    img: vscode,
+    url:'https://code.visualstudio.com/'
+  },
+  {
+    img: slack,
+    url:'https://slack.com/'
+  },
+  {
+    img: yarn,
+    url:'https://yarnpkg.com/'
+  },
+]
+
+export const AuthTech = [
   
   {
     img: firebase,
