@@ -16,3 +16,26 @@ body{
     pointer-events: none;
   }
   
+
+  @layer utilities {
+    .btn {
+      @apply py-4 px-4 bg-secondary hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
+    }
+  
+    .head-text {
+      @apply mt-4 text-4xl leading-[40px] uppercase font-semibold tracking-[-1.2px] text-gray-100;
+    }
+  
+    .Secordary-Title {
+      @apply mt-4 text-[24px] leading-[26px] uppercase font-semibold tracking-[-1.2px] text-gray-100;
+    }
+  
+    .subtitle {
+      @apply  text-[20px] py-2 font-medium text-gray-200;
+    }
+  
+    .small-text {
+      @apply flex gap-2 text-sm font-medium text-gray-300;
+    }
+    
+  }

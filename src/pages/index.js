@@ -1,3 +1,4 @@
+import AboutMe from "@/Components/HomePage/AboutMe";
 import Hero from "@/Components/HomePage/Hero";
 import Head from "next/head";
 
@@ -9,6 +10,7 @@ export default function Home() {
       </Head>
 
       <Hero />
+      <AboutMe/>
     </>
   );
 }
