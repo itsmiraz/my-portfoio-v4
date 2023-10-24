@@ -1,28 +1,47 @@
 import { Auth, AuthTech, BackedEndTechs, DevOps, FrontEndTechs, ToolsConstant, othersTech } from '@/Constants/Constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 const SkillSet = () => {
+
+
+    const [sectionRef, inView] = useInView({
+        triggerOnce: true, // Trigger animation once when it enters the viewport
+        threshold: 0.2, // Adjust this threshold as needed
+    });
+
+    // State to control whether animations should play
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setAnimate(true);
+        }
+    }, [inView]);
+
     return (
         <div className='px-32 py-20'>
             <h2 className='head-text'>Skill - Set</h2>
-            <div className='w-full mt-10 grid-cols-2 grid gap-20'>
+            <div ref={sectionRef} className='w-full mt-10 grid-cols-2 grid gap-20'>
                 <div>
                     <h3 className='subtitle'>FRONT END</h3>
                     <div className='grid gap-5 grid-cols-4'>
                         {
-                            FrontEndTechs.map((tech, i) => <SkillCard key={i} data={tech} />)
+                            FrontEndTechs.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                         }
                     </div>
 
 
                     <div className='flex gap-5'>
-                    <div className='w-full'>
+                        <div className='w-full'>
                             <h3 className='subtitle'>AUTHENTICATION</h3>
                             <div className='grid w-full gap-5 grid-cols-2'>
                                 {
-                                    AuthTech.map((tech, i) => <SkillCard key={i} data={tech} />)
+                                    AuthTech.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                                 }
                             </div>
                         </div>
@@ -30,11 +49,11 @@ const SkillSet = () => {
                             <h3 className='subtitle'>OTHERS</h3>
                             <div className='grid  w-full gap-5 grid-cols-2'>
                                 {
-                                    othersTech.map((tech, i) => <SkillCard key={i} data={tech} />)
+                                    othersTech.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                                 }
                             </div>
                         </div>
-                       </div>
+                    </div>
 
 
 
@@ -45,27 +64,27 @@ const SkillSet = () => {
                         <h3 className='subtitle'>BACK END</h3>
                         <div className='grid gap-5 grid-cols-4'>
                             {
-                                BackedEndTechs.map((tech, i) => <SkillCard key={i} data={tech} />)
+                                BackedEndTechs.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                             }
                         </div>
-                        
+
                     </div>
                     <div className='w-full'>
-                            <h3 className='subtitle'>TOOLS</h3>
-                            <div className='grid w-full gap-5 grid-cols-4'>
-                                {
-                                    ToolsConstant.map((tech, i) => <SkillCard key={i} data={tech} />)
-                                }
-                            </div>
+                        <h3 className='subtitle'>TOOLS</h3>
+                        <div className='grid w-full gap-5 grid-cols-4'>
+                            {
+                                ToolsConstant.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
+                            }
                         </div>
+                    </div>
                     <div className='w-full'>
-                            <h3 className='subtitle'>DEV OPS</h3>
-                            <div className='grid w-full gap-5 grid-cols-4'>
-                                {
-                                    DevOps.map((tech, i) => <SkillCard key={i} data={tech} />)
-                                }
-                            </div>
+                        <h3 className='subtitle'>DEV OPS</h3>
+                        <div className='grid w-full gap-5 grid-cols-4'>
+                            {
+                                DevOps.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
+                            }
                         </div>
+                    </div>
                 </div>
 
             </div>
@@ -75,12 +94,17 @@ const SkillSet = () => {
 
 export default SkillSet;
 
-const SkillCard = ({ data }) => {
+const SkillCard = ({ data, animate, i }) => {
 
-    return <div className='w-full'>
+    return <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: animate ? 1 : 0, y: animate ? 0 : -100 }}
+        transition={{ duration: 0.3, delay: i * 0.4 }}
+
+        className='w-full'>
         <Link href={data.url}>
             <Image src={data.img} alt='miraj-skill' />
 
         </Link>
-    </div>
+    </motion.div>
 }
