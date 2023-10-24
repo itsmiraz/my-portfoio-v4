@@ -13,8 +13,8 @@ export default function Home() {
         <title>MIRAJ HOSSEN PORTFOLIO | WEB DEVELOPER</title>
       </Head>
 
-      {/* <Hero />
-      <AboutMe />
+       <Hero />
+     {/* <AboutMe />
       <Projects />
       <Experience />
       <SkillSet />

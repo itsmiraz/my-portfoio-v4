@@ -26,7 +26,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <section id='home' ref={sectionRef} className='relative overflow-hidden mt-10 z-30'>
+        <section id='home' ref={sectionRef} className='relative overflow-hidden mt-6 lg:mt-10 z-30'>
 
             <div className='absolute  w-full h-full' >
                 <motion.h2
@@ -34,29 +34,29 @@ const Hero = () => {
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('left')}
-                    className='text-white text-[96px]  absolute left-[20%] z-10 top-[30%] font-semibold'>FRONT</motion.h2>
+                    className=' heroTitle  absolute left-[10%] lg:left-[20%]  top-[30%]'>FRONT</motion.h2>
                 <motion.h2
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('left')}
-                    className='text-white text-[96px] absolute right-[17%] z-10 top-[35%]  font-semibold'>-END</motion.h2>
+                    className=' heroTitle absolute right-[12%] lg:right-[17%] top-[50%] lg:top-[35%]'>-END</motion.h2>
                 <motion.h2
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('right')}
-                    className='text-white absolute right-[15%] z-10 bottom-40 text-[96px] font-semibold'>DEVELOPER</motion.h2>
+                    className='heroTitle absolute right-[10%]  lg:right-[15%] bottom-10 md:bottom-20 lg:bottom-40'>DEVELOPER</motion.h2>
                 <motion.div
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('down')}>
-                    <Image className='absolute right-[30%] top-20' src={heroimg} alt='miraj-hossen' ></Image>
+                    <Image className='absolute right-[30%] top-4 lg:top-20 lg:w-fit w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
                 </motion.div>
             </div>
 
-            <Image  className='mx-auto p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
+            <Image className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
         </section>
     );
 };
