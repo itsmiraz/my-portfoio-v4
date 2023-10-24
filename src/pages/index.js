@@ -2,6 +2,7 @@ import AboutMe from "@/Components/HomePage/AboutMe";
 import Experience from "@/Components/HomePage/Experience";
 import Hero from "@/Components/HomePage/Hero";
 import Projects from "@/Components/HomePage/Projects";
+import Contact from "@/Components/HomePage/contact";
 import SkillSet from "@/Components/HomePage/skillSet";
 import Head from "next/head";
 
@@ -16,7 +17,8 @@ export default function Home() {
       <AboutMe />
       <Projects />
       <Experience />
-      <SkillSet/>
+      <SkillSet />
+      <Contact/>
     </>
   );
 }

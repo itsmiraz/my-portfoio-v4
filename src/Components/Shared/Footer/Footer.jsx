@@ -1,4 +1,6 @@
 import React from 'react';
+import footerOverlay from '../../../../public/Assets/footer-cover.png'
+
 
 const Footer = () => {
     return (

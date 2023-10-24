@@ -2,6 +2,12 @@ import resdium from "../../public/Assets/projects/resdium.webp";
 import shopNow from "../../public/Assets/projects/shop-now.webp";
 import expensetracker from "../../public/Assets/projects/expense-tracker.webp";
 
+// Icons
+import facebook from '../../public/Assets/social-icons/Facebook.webp'
+import insta from '../../public/Assets/social-icons/Instagram.webp'
+import gitIco from '../../public/Assets/social-icons/github.webp'
+import linkedin from '../../public/Assets/social-icons/Linkedin.webp'
+
 // Front End Techs
 import vitejs from '../../public/Assets/Front-end/vitejs.webp'
 import bootstrap from '../../public/Assets/Front-end/bootstrap.webp'
@@ -47,6 +53,36 @@ import vscode from '../../public/Assets/tools/vs-code.webp'
 import slack from '../../public/Assets/tools/slack.webp'
 import yarn from '../../public/Assets/tools/yarn.webp'
 
+
+export const SocailMediaData = [
+  {
+    icon: gitIco,
+    url: "https://github.com/itsmiraz",
+    ref:"Github"
+    
+  },
+  {
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/mirajhossen/",
+    ref:"Linkedin"
+
+    
+  },
+  {
+    icon: facebook,
+    url: "https://web.facebook.com/mirajhosssen/",
+    ref:"Facebook"
+
+    
+  },
+  {
+    icon: insta,
+    url: "https://www.instagram.com/its_miraz_/",
+    ref:"Instagram"
+
+    
+  }
+]
 
 
 
