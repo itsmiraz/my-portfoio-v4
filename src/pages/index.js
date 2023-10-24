@@ -1,4 +1,5 @@
 import AboutMe from "@/Components/HomePage/AboutMe";
+import Experience from "@/Components/HomePage/Experience";
 import Hero from "@/Components/HomePage/Hero";
 import Projects from "@/Components/HomePage/Projects";
 import Head from "next/head";
@@ -12,7 +13,8 @@ export default function Home() {
 
       <Hero />
       <AboutMe />
-      <Projects/>
+      <Projects />
+      <Experience/>
     </>
   );
 }

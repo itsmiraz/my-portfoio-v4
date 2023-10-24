@@ -26,3 +26,24 @@ export const ProjectsData = [
     desc: "Expenses Tracker is a Web app where you can manage your transactions.",
   },
 ];
+
+export const ExperienceData = [
+  {
+    jobTitle: "Web Developer",
+    duration: "Feb-2022 - May-2022",
+    company: "Black Fox Metaverse",
+    location: "Delhi, India",
+  },
+  {
+    jobTitle: "Product Engineer",
+    duration: "May-2022 - Sept-2022",
+    company: "Whitepanda",
+    location: "Banglore, India",
+  },
+  {
+    jobTitle: "Founder & Lead Developer",
+    duration: "Sept-2022 - Present",
+    company: "Resdium Digital",
+    location: "Bangladesh",
+  },
+];
