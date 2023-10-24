@@ -42,7 +42,7 @@ const Contact = () => {
                 animate={animate ? 'animate' : 'initial'}
                 exit='exit'
                 variants={slideAnimation('up')}
-                className='max-w-[1200px] mx-auto bg-[#05070e5d] backdrop-blur-md relative z-20 p-10 border-[#FFFFFF] border-opacity-10 border rounded-md grid grid-cols-2 gap-6'>
+                className='max-w-[1200px] mx-auto bg-[#05070e5d] backdrop-blur-md relative z-20 p-10 border-[#FFFFFF] border-opacity-10 border rounded-md grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 <div className=''>
                     <h2 className='head-text'>Contact Me</h2>
                     <p className='small-text mt-4'>

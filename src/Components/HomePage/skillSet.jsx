@@ -24,9 +24,9 @@ const SkillSet = () => {
     }, [inView]);
 
     return (
-        <div id='skills' className='px-32 py-20'>
+        <div id='skills' className='px-6 lg:px-32 py-20'>
             <h2 className='head-text'>Skill - Set</h2>
-            <div ref={sectionRef} className='w-full mt-10 grid-cols-2 grid gap-20'>
+            <div ref={sectionRef} className='w-full mt-10 grid-cols-1 md:grid-cols-2 grid gap-20'>
                 <div>
                     <h3 className='subtitle'>FRONT END</h3>
                     <div className='grid gap-5 grid-cols-4'>

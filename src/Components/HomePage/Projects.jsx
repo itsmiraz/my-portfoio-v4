@@ -23,10 +23,10 @@ const Projects = () => {
     }, [inView]);
 
     return (
-        <div id='works' className='px-32 pt-32 pb-20'>
+        <div id='works' className='px-6 lg:px-32 pt-32 pb-20'>
             <h2 className='head-text'>Works</h2>
             <p className='subtitle'>Here are some of my works. Although I worked in <br /> many projects but these are completely mine.</p>
-            <div ref={sectionRef} className='mt-12 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div ref={sectionRef} className='mt-12 grid gap-6 lg:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     ProjectsData.map((data, i) => <ProjectCard animate={animate} i={i} key={i} data={data} />)
                 }
@@ -57,7 +57,7 @@ const ProjectCard = ({ data, i, animate }) => {
             </div>
 
             <div className='p-2 rounded-b-md mt-2 bg-[#021527]'>
-                <h2 className='subtitle'>{title}</h2>
+                <h2 className='Secordary-Title'>{title}</h2>
                 <p className='small-text'>{desc}</p>
                 <div>
                     <Link target='_blank' href={liveUrl}>

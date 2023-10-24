@@ -53,7 +53,7 @@ const AboutMe = () => {
                 <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br className="md:block hidden" />
                     with a strong love for all things code and technology.</p>
 
-                <div ref={sectionRef} className='relative  pt-10 w-full'>
+                <div ref={sectionRef} className='relative md:pl-10 pl-0  pt-10 w-full'>
                     <motion.div
                         initial='initial'
                         animate={animate ? 'animate' : 'initial'}
@@ -86,7 +86,7 @@ const AboutMe = () => {
 export default AboutMe;
 
 const AboutMeCard = ({ data }) => {
-    return <div className='max-w-[490px] z-30  backdrop-blur pt-4 pb-6 px-6 lg:px-12 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700'>
+    return <div className='max-w-[320px] lg:max-w-[490px] z-30  backdrop-blur pt-4 pb-6 px-6 lg:px-12 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700'>
         <h2 className='Secordary-Title'>{data.title} </h2>
         <p className='small-text py-2 '><Balancer>
             {data.desc}
