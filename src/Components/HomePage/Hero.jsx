@@ -56,7 +56,7 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            <Image className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
+            <Image  lazy='false'  loading='eager'  className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
         </section>
     );
 };
