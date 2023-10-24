@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Balancer from 'react-wrap-balancer';
 import pinkbgOverlay from '../../../public/Assets/pink-backgroud-overlay.webp'
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { slideAnimation } from '@/lib/motion';
 
 
 const AboutMe = () => {
@@ -25,28 +28,57 @@ const AboutMe = () => {
         },
     ]
 
+
+
+
+    const [sectionRef, inView] = useInView({
+        triggerOnce: true, // Trigger animation once when it enters the viewport
+        threshold: 0.2, // Adjust this threshold as needed
+    });
+
+    // State to control whether animations should play
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setAnimate(true);
+        }
+    }, [inView]);
+
+
     return (
-        <section className='py-20 pl-32  relative'>
+        <section className='py-20 pl-32 overflow-hidden relative'>
             <div>
-                    <h2 className='head-text'>About Me</h2>
-            <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br />
-                with a strong love for all things code and technology.</p>
+                <h2 className='head-text'>About Me</h2>
+                <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br />
+                    with a strong love for all things code and technology.</p>
 
-            <div className='relative  pt-10 w-full'>
-            <div className='pt-6 flex flex-wrap gap-14'>
-                {
-                    AboutMeConstans.slice(0,2).map((data, i) => <AboutMeCard data={data} key={i} />)
-                }
-            </div>
-            <div className='pt-12 pl-10 flex flex-wrap gap-14'>
-                {
-                    AboutMeConstans.slice(2,4).map((data, i) => <AboutMeCard data={data} key={i} />)
-                }
+                <div ref={sectionRef} className='relative  pt-10 w-full'>
+                    <motion.div
+                        initial='initial'
+                        animate={animate ? 'animate' : 'initial'}
+                        exit='exit'
+                        variants={slideAnimation('left')}
+                        className='pt-6 flex flex-wrap gap-14'>
+                        {
+                            AboutMeConstans.slice(0, 2).map((data, i) => <AboutMeCard data={data} key={i} />)
+                        }
+                    </motion.div>
+                    <motion.div
+
+                        initial='initial'
+                        animate={animate ? 'animate' : 'initial'}
+                        exit='exit'
+                        variants={slideAnimation('right')}
+                        className='pt-12 pl-10 flex flex-wrap gap-14'>
+                        {
+                            AboutMeConstans.slice(2, 4).map((data, i) => <AboutMeCard data={data} key={i} />)
+                        }
+                    </motion.div>
+                    <Image className='absolute z-10 inset-0 transform mx-auto' src={pinkbgOverlay} alt='pink-overlay-bg' />
+
                 </div>
-                <Image className='absolute z-10 inset-0 transform mx-auto' src={pinkbgOverlay} alt='pink-overlay-bg'/>
-
-           </div>
-        </div>
+            </div>
         </section>
     );
 };

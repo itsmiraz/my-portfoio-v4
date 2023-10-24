@@ -2,7 +2,7 @@ import resdium from "../../public/Assets/projects/resdium.webp";
 import shopNow from "../../public/Assets/projects/shop-now.webp";
 import expensetracker from "../../public/Assets/projects/expense-tracker.webp";
 
-export const Projects = [
+export const ProjectsData = [
   {
     img: resdium,
     title: "RESDIUM",
