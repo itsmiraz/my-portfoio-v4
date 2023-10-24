@@ -18,7 +18,6 @@ const MainLayout = ({ children }) => {
         <Header />
         {/* <CustomCursor/> */}
         {children}
-        <Footer />
       </div>
     </div>
   );

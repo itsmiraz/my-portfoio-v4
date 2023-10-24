@@ -26,7 +26,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <section id='home' ref={sectionRef} className='relative overflow-hidden z-30'>
+        <section id='home' ref={sectionRef} className='relative overflow-hidden mt-10 z-30'>
 
             <div className='absolute  w-full h-full' >
                 <motion.h2
@@ -56,7 +56,7 @@ const Hero = () => {
                 </motion.div>
             </div>
 
-            <Image className='mx-auto p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
+            <Image  className='mx-auto p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
         </section>
     );
 };
