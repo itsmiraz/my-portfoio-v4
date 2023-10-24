@@ -23,7 +23,7 @@ const Projects = () => {
     }, [inView]);
 
     return (
-        <div className='px-32 py-20'>
+        <div id='works' className='px-32 py-20'>
             <h2 className='head-text'>Works</h2>
             <p className='subtitle'>Here are some of my works. Although I worked in <br /> many projects but these are completely mine.</p>
             <div ref={sectionRef} className='mt-12 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>

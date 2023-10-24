@@ -35,7 +35,7 @@ const Contact = () => {
 
 
     return (
-        <div ref={sectionRef} className='flex pt-40  relative justify-center items-center'>
+        <div id='contact' ref={sectionRef} className='flex pt-40  relative justify-center items-center'>
             <motion.div
 
                 initial='initial'

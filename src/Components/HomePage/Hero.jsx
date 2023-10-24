@@ -26,7 +26,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <section ref={sectionRef} className='relative overflow-hidden z-30'>
+        <section id='home' ref={sectionRef} className='relative overflow-hidden z-30'>
 
             <div className='absolute  w-full h-full' >
                 <motion.h2

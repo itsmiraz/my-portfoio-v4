@@ -16,13 +16,18 @@ const Header = () => {
                 <div>
                     <ul className='flex items-center gap-x-10 text-white'>
                         <li>
-                            HOME
+                            <a href="#home">
+
+
+                                HOME
+                            </a>
                         </li>
                         <li>
                             WORKS
                         </li>
                         <li>
-                            ABOUT
+                            <a href="#about">ABOUT</a>
+
                         </li>
                         <li>
                             CONTACT

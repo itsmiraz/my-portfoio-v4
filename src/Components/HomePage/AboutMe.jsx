@@ -47,7 +47,7 @@ const AboutMe = () => {
 
 
     return (
-        <section className='py-20 pl-32 overflow-hidden relative'>
+        <section id='about' className='pb-20 pt-32 pl-32 overflow-hidden relative'>
             <div>
                 <h2 className='head-text'>About Me</h2>
                 <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br />

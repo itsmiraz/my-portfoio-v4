@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Experience = () => {
     return (
-        <div className='px-32 py-20'>
+        <div id='experience' className='px-32 py-20'>
             <h2 className='head-text'>Experience</h2>
             <div className='flex mt-14'>
                 {
