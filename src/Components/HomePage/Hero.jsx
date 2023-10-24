@@ -52,7 +52,7 @@ const Hero = () => {
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('down')}>
-                    <Image className='absolute right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
+                    <Image lazy='false'  loading='eager'  className='absolute right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
                 </motion.div>
             </div>
 

@@ -64,6 +64,7 @@ const Contact = () => {
 
                             <input
                                 type="text"
+                                name='name'
                                 className='bg-[#011527] outline-none text-white w-full opacity-50 p-2 rounded'
                             />
                         </div>
@@ -72,6 +73,7 @@ const Contact = () => {
 
                             <input
                                 type="text"
+                                name='email'
                                 className='bg-[#011527] w-full  outline-none text-white opacity-50 p-2 rounded'
                             />
                         </div>
@@ -80,7 +82,7 @@ const Contact = () => {
                         <label htmlFor="message" className='small-text pb-2'>Message</label>
                         <textarea
                             className='w-full h-24 outline-none  text-white opacity-50 p-2 rounded bg-[#011527] '
-                            name=""
+                            name="message"
                             id=""
                         ></textarea>
                     </div>

@@ -44,7 +44,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='lg:hidden block'>
-                    <button onClick={() => setShow(!Show)} className='text-white'>
+                    <button aria-label='Toggle Menu' onClick={() => setShow(!Show)} className='text-white'>
 
                         {Show ? <AiOutlineClose /> :
 
