@@ -33,10 +33,10 @@ export default function Home() {
         />
         <meta
           property="og:url"
-          content="https://mirajhossen.netlify.app/"
+          content="https://mirajhossen.vercel.app/"
         />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://mirajhossen.netlify.app/" />
+        <link rel="canonical" href="https://mirajhossen.vercel.app/" />
       </Head>
 
       <Hero />
