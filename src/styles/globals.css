@@ -5,3 +5,14 @@
 body{
     background-color:  #010409 ;
 }
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+  /* Customize the color */
+    border: 2px solid #ffffff; /* Customize the border color */
+    border-radius: 50%;
+    mix-blend-mode: difference; /* You can experiment with blend modes for interesting effects */
+    pointer-events: none;
+  }
+  
