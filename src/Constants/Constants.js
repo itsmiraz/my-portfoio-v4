@@ -268,7 +268,7 @@ export const ExperienceData = [
   },
   {
     jobTitle: "Product Engineer",
-    duration: "May-2022 - Sept-2022",
+    duration: "May-2022 - Present",
     company: "Whitepanda",
     location: "Banglore, India",
   },
