@@ -27,10 +27,10 @@ export default function Home() {
           property="og:description"
           content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications and digital experiences that stand out."
         />
-        {/* <meta
+        <meta
           property="og:image"
-          content="https://your-portfolio-image-url.com/your-image.jpg"
-        /> */}
+          content="https://res.cloudinary.com/dicnezd6a/image/upload/v1698160819/images/miraj-hero-omg_q9jah4.webp"
+        />
         <meta
           property="og:url"
           content="https://mirajhossen.netlify.app/"
