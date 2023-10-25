@@ -28,7 +28,7 @@ const Hero = () => {
     return (
         <section id='home' ref={sectionRef} className='relative overflow-hidden mt-6 lg:mt-10 z-30'>
 
-            <div className='absolute  w-full h-full' >
+            <div className='absolute z-30 w-full h-full' >
                 <motion.h2
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}
@@ -52,11 +52,18 @@ const Hero = () => {
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('down')}>
-                    <Image lazy='false'  loading='eager'  className='absolute right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
+                    <Image lazy='false' loading='eager' className='absolute  right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
                 </motion.div>
             </div>
 
-            <Image  lazy='false'  loading='eager'  className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
+            <motion.div
+                initial='initial'
+                animate={animate ? 'animate' : 'initial'}
+                exit='exit'
+                variants={slideAnimation('down')}>
+                <Image lazy='false' loading='eager' className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
+            </motion.div>
+
         </section>
     );
 };

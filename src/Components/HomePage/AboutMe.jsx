@@ -49,9 +49,16 @@ const AboutMe = () => {
     return (
         <section id='about' className='pb-20 pt-32 pl-6 pr-6 lg:pl-32 overflow-hidden relative'>
             <div>
+                <motion.div
+                
+                initial='initial'
+                animate={animate ? 'animate' : 'initial'}
+                exit='exit'
+                variants={slideAnimation('up')}>
                 <h2 className='head-text'>About Me</h2>
                 <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br className="md:block hidden" />
                     with a strong love for all things code and technology.</p>
+               </motion.div>
 
                 <div ref={sectionRef} className='relative md:pl-10 pl-0  pt-10 w-full'>
                     <motion.div
