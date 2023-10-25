@@ -12,10 +12,10 @@ export default function Home() {
       <Head>
         {" "}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MIRAJ HOSSEN | PORTFOLIO</title>
+        <title>MIRAJ HOSSEN | FULL STACK DEV</title>
         <meta
           name="description"
-          content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications and digital experiences that stand out."
+          content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications  that stand out."
         />
         <meta
           name="keywords"
@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:title" content="Miraj Hossen | Portfolio" />
         <meta
           property="og:description"
-          content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications and digital experiences that stand out."
+          content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications  that stand out."
         />
         <meta
           property="og:image"
@@ -38,6 +38,9 @@ export default function Home() {
         <meta name="google-site-verification" content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://mirajhossen.vercel.app/" />
+
+
+
       </Head>
 
       <Hero />

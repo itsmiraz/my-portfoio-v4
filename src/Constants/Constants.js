@@ -7,6 +7,7 @@ import facebook from '../../public/Assets/social-icons/Facebook.webp'
 import insta from '../../public/Assets/social-icons/Instagram.webp'
 import gitIco from '../../public/Assets/social-icons/github.webp'
 import linkedin from '../../public/Assets/social-icons/Linkedin.webp'
+import behance from '../../public/Assets/social-icons/Behance.png'
 
 // Front End Techs
 import vitejs from '../../public/Assets/Front-end/vitejs.webp'
@@ -81,6 +82,11 @@ export const SocailMediaData = [
     ref:"Instagram"
 
     
+  },
+  {
+    icon:behance,
+    url: 'https://www.behance.net/itsmiraz',
+    ref:'Behance'
   }
 ]
 

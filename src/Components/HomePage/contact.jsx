@@ -56,6 +56,7 @@ const Contact = () => {
                             {SocailMediaData.map((data, i) => <div key={i}><Link target='_blank' rel="noopener noreferrer" href={data.url}><Image src={data.icon} className='max-w-[30px]' alt={data.ref} /></Link></div>)}
                         </div>
                     </div>
+                    <p className='small-text pt-4'>Email : miraj.dev.contact@gmail.com</p>
                 </div>
                 <div className=' space-y-2 '>
                     <div className='flex w-full gap-x-4'>
