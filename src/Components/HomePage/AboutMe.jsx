@@ -56,7 +56,7 @@ const AboutMe = () => {
                 exit='exit'
                 variants={slideAnimation('up')}>
                 <h2 className='head-text'>About Me</h2>
-                <p className='subtitle'>Hey there, I`m Miraj, a passionate Full Stack Developer <br className="md:block hidden" />
+                <p className='subtitle'>Hey there, I`m Miraj Hossen, a passionate Full Stack Developer <br className="md:block hidden" />
                     with a strong love for all things code and technology.</p>
                </motion.div>
 

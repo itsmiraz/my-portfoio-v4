@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         {" "}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MIRAJ HOSSEN | FULL STACK DEV</title>
+        <title>Miraj Hossen</title>
         <meta
           name="description"
           content="Welcome to my portfolio! I'm Miraj Hossen, a full-stack developer from Bangladesh, passionate about creating web applications  that stand out."
