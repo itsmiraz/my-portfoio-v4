@@ -6,10 +6,20 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { slideAnimation } from '@/lib/motion';
-
+import TextTransition, { presets } from 'react-text-transition';
 
 const Hero = () => {
 
+    const TEXTS = ['FRONT', 'BACK',];
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(
+            () => setIndex((index) => index + 1),
+            3000, // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
 
     const [sectionRef, inView] = useInView({
         triggerOnce: true, // Trigger animation once when it enters the viewport
@@ -34,7 +44,7 @@ const Hero = () => {
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
                     variants={slideAnimation('left')}
-                    className=' heroTitle  absolute left-[10%] lg:left-[20%]  top-[30%]'>FRONT</motion.h2>
+                    className='heroTitle  absolute left-[10%] lg:left-[20%]  top-[30%]'><TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition></motion.h2>
                 <motion.h2
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}

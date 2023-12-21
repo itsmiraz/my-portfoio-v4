@@ -50,15 +50,14 @@ const AboutMe = () => {
         <section id='about' className='pb-20 pt-32 pl-6 pr-6 lg:pl-32 overflow-hidden relative'>
             <div>
                 <motion.div
-                
-                initial='initial'
-                animate={animate ? 'animate' : 'initial'}
-                exit='exit'
-                variants={slideAnimation('up')}>
-                <h2 className='head-text'>About Me</h2>
-                <p className='subtitle'>Hey there, I`m Miraj Hossen, a passionate Full Stack Developer <br className="md:block hidden" />
-                    with a strong love for all things code and technology.</p>
-               </motion.div>
+                    initial='initial'
+                    animate={animate ? 'animate' : 'initial'}
+                    exit='exit'
+                    variants={slideAnimation('up')}>
+                    <h2 className='head-text'>About Me</h2>
+                    <p className='subtitle'>Hey there, I`m Miraj Hossen, a passionate Full Stack Developer <br className="md:block hidden" />
+                        with a strong love for all things code and technology.</p>
+                </motion.div>
 
                 <div ref={sectionRef} className='relative md:pl-10 pl-0  pt-10 w-full'>
                     <motion.div
@@ -66,7 +65,7 @@ const AboutMe = () => {
                         animate={animate ? 'animate' : 'initial'}
                         exit='exit'
                         variants={slideAnimation('left')}
-                        className='pt-6 flex flex-wrap gap-8 lg:gap-14'>
+                        className='pt-6   relative z-30 flex flex-wrap gap-8 lg:gap-14'>
                         {
                             AboutMeConstans.slice(0, 2).map((data, i) => <AboutMeCard data={data} key={i} />)
                         }
@@ -77,12 +76,11 @@ const AboutMe = () => {
                         animate={animate ? 'animate' : 'initial'}
                         exit='exit'
                         variants={slideAnimation('right')}
-                        className='pt-8 lg:pt-12 lg:pl-10 flex flex-wrap gap-8 lg:gap-14'>
+                        className='pt-8 relative z-30 lg:pt-12 lg:pl-10 flex flex-wrap gap-8 lg:gap-14'>
                         {
                             AboutMeConstans.slice(2, 4).map((data, i) => <AboutMeCard data={data} key={i} />)
                         }
                     </motion.div>
-                    <Image className='absolute z-10 inset-0 transform mx-auto' src={pinkbgOverlay} alt='pink-overlay-bg' />
 
                 </div>
             </div>

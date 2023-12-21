@@ -51,8 +51,8 @@ const ProjectCard = ({ data, i, animate }) => {
             animate={{ opacity: animate ? 1 : 0, x: animate ? 0 : -100 }}
             transition={{ duration: 0.2, delay: i * 0.2 }}
             className='bg-[#000A1A] p-3 rounded-md'>
-            <div>
-                <Image className='w-full' src={img} alt={alt} />
+            <div className='h-[250px] overflow-hidden'>
+                <Image width={200} height={300} className='w-full' src={img} alt={alt} />
 
             </div>
 
