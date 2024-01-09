@@ -29,7 +29,7 @@ const SkillSet = () => {
             <div ref={sectionRef} className='w-full mt-10 grid-cols-1 md:grid-cols-2 grid gap-20'>
                 <div>
                     <h3 className='subtitle'>FRONT END</h3>
-                    <div className='grid gap-5 grid-cols-4'>
+                    <div className='grid gap-5 grid-cols-5'>
                         {
                             FrontEndTechs.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                         }
@@ -38,16 +38,11 @@ const SkillSet = () => {
 
                     <div className='flex gap-5'>
                         <div className='w-full'>
-                            <h3 className='subtitle'>AUTHENTICATION</h3>
-                            <div className='grid w-full gap-5 grid-cols-2'>
+                            <h3 className='subtitle'>AUTHENTICATION and OTHERS</h3>
+                            <div className='grid w-full gap-5 grid-cols-5'>
                                 {
                                     AuthTech.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                                 }
-                            </div>
-                        </div>
-                        <div className='w-full'>
-                            <h3 className='subtitle'>OTHERS</h3>
-                            <div className='grid  w-full gap-5 grid-cols-2'>
                                 {
                                     othersTech.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                                 }
@@ -62,7 +57,7 @@ const SkillSet = () => {
                 <div>
                     <div>
                         <h3 className='subtitle'>BACK END</h3>
-                        <div className='grid gap-5 grid-cols-4'>
+                        <div className='grid gap-5 grid-cols-5'>
                             {
                                 BackedEndTechs.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                             }
@@ -71,7 +66,7 @@ const SkillSet = () => {
                     </div>
                     <div className='w-full'>
                         <h3 className='subtitle'>TOOLS</h3>
-                        <div className='grid w-full gap-5 grid-cols-4'>
+                        <div className='grid w-full gap-5 grid-cols-5'>
                             {
                                 ToolsConstant.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                             }
@@ -79,7 +74,7 @@ const SkillSet = () => {
                     </div>
                     <div className='w-full'>
                         <h3 className='subtitle'>DEV OPS</h3>
-                        <div className='grid w-full gap-5 grid-cols-4'>
+                        <div className='grid w-full gap-5 grid-cols-5'>
                             {
                                 DevOps.map((tech, i) => <SkillCard i={i} animate={animate} key={i} data={tech} />)
                             }

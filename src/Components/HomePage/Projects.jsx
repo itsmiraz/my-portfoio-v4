@@ -7,31 +7,44 @@ import { useInView } from 'react-intersection-observer';
 
 
 const Projects = () => {
+    // State to control whether animations should play
+    const [animate, setAnimate] = useState(false);
+    const [Limit, setLimit] = useState(3);
 
-    const [sectionRef, inView] = useInView({
+    const [newsectionRef, inView] = useInView({
         triggerOnce: true, // Trigger animation once when it enters the viewport
         threshold: 0.2, // Adjust this threshold as needed
     });
 
-    // State to control whether animations should play
-    const [animate, setAnimate] = useState(false);
 
     useEffect(() => {
+
         if (inView) {
             setAnimate(true);
         }
     }, [inView]);
 
-    return (
-        <div id='works' className='px-6 lg:px-32 pt-32 pb-20'>
-            <h2 className='head-text'>Works</h2>
-            <p className='subtitle'>Here are some of my works. Although I worked in <br /> many projects but these are completely mine.</p>
-            <div ref={sectionRef} className='mt-12 grid gap-6 lg:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                {
-                    ProjectsData.map((data, i) => <ProjectCard animate={animate} i={i} key={i} data={data} />)
-                }
-            </div>
 
+    const handleLimit = () => {
+        setLimit((prev) => prev + 3)
+    }
+    return (
+        <div ref={newsectionRef}>
+            <div id='works' className='px-6 lg:px-32 pt-32 pb-20'>
+                <h2 className='head-text'>Works</h2>
+                <p className='subtitle'>Here are some of my works. Although I worked in <br /> many projects but these are completely mine.</p>
+                <div className='mt-12 grid gap-6 lg:gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                    {
+                        ProjectsData.slice(0, Limit).map((data, i) => <ProjectCard animate={animate} i={i} key={i} data={data} />)
+                    }
+                </div>
+                {
+                    ProjectsData.length > Limit &&
+
+                    <button onClick={handleLimit} className='bg-[#0065C2] text-white px-3 py-1 rounded mt-4'>View More</button>
+                }
+
+            </div>
         </div>
     );
 };
@@ -41,7 +54,6 @@ export default Projects;
 
 
 const ProjectCard = ({ data, i, animate }) => {
-
     const { img, alt, title, desc, liveUrl } = data
 
     return (
@@ -52,7 +64,7 @@ const ProjectCard = ({ data, i, animate }) => {
             transition={{ duration: 0.2, delay: i * 0.2 }}
             className='bg-[#000A1A] p-3 rounded-md'>
             <div className='h-[250px] overflow-hidden'>
-                <Image width={200} height={300} className='w-full' src={img} alt={alt} />
+                <Image width={700} height={700} className='w-full' src={img} alt={alt} />
 
             </div>
 

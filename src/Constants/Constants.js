@@ -234,10 +234,17 @@ export const ProjectsData = [
     desc: "Resdium is a digital Agency that mainly provides digital solutions to buisnesses",
   },
   {
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1704793946/nenox-shop-min_dzaq6w.webp",
+    title: "Nenox Shop",
+    alt: "nenoxshop-cover",
+    liveUrl: "https://nenoxshop.com/",
+    desc: "Nenox shop is platform for buying dimonds or packages for different types of games like Free Fire Pubg etc.",
+  },
+  {
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1703130206/Projects%20Images/mambarter-_iizdac.webp",
     title: "MAM Barter",
     alt: "resdium-cover",
-    liveUrl: "https://mambartertest.netlify.app/",
+    liveUrl: "https://mambarter.com/",
     desc: "Mam barter is Barter Trading platfrorm. It has stripe payment integrations and so on",
   },
   {
