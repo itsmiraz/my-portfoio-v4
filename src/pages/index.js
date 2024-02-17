@@ -31,18 +31,14 @@ export default function Home() {
           property="og:image"
           content="https://res.cloudinary.com/dicnezd6a/image/upload/v1698160819/images/miraj-hero-omg_q9jah4.webp"
         />
+        <meta property="og:url" content="https://mirajhossen.vercel.app/" />
         <meta
-          property="og:url"
-          content="https://mirajhossen.vercel.app/"
+          name="google-site-verification"
+          content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc"
         />
-        <meta name="google-site-verification" content="01JMCDAiWgBjv7QWqWk2v2Tg-DbZo3SWxq3uYzIf9kc" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://mirajhossen.vercel.app/" />
-
-
-
       </Head>
-
       <Hero />
       <AboutMe />
       <Projects />

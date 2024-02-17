@@ -74,6 +74,7 @@ const Hero = () => {
                 <Image lazy='false' loading='eager' className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
             </motion.div>
 
+
         </section>
     );
 };

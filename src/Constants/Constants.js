@@ -223,7 +223,7 @@ export const ProjectsData = [
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1703130668/Projects%20Images/whitepanda_pbbdgt.webp",
     title: "White Panda",
     alt: "whitepanda-cover",
-    liveUrl: "http://localhost:3000/",
+    liveUrl: "https://whitepanda.io/",
     desc: "White Panda is indian startup based on Bangluru. It has 50+ pages built on nextjs",
   },
   {
@@ -232,6 +232,13 @@ export const ProjectsData = [
     alt: "resdium-cover",
     liveUrl: "https://resdium.live/",
     desc: "Resdium is a digital Agency that mainly provides digital solutions to buisnesses",
+  },
+  {
+    img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1708176791/Projects%20Images/Group_1000001749_1_vfmqbq.jpg",
+    title: "Fit Advice",
+    alt: "fit-advice-cover",
+    liveUrl: "https://fitadvice.eu/",
+    desc: "Fit Advice is a landing page for and mobile app called FitAdvice. That helps with fitness.",
   },
   {
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1704793946/nenox-shop-min_dzaq6w.webp",
