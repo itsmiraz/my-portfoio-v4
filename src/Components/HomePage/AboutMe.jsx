@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Balancer from 'react-wrap-balancer';
-import pinkbgOverlay from '../../../public/Assets/pink-backgroud-overlay.webp'
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { slideAnimation } from '@/lib/motion';
@@ -32,8 +30,8 @@ const AboutMe = () => {
 
 
     const [sectionRef, inView] = useInView({
-        triggerOnce: true, // Trigger animation once when it enters the viewport
-        threshold: 0.2, // Adjust this threshold as needed
+        triggerOnce: true,
+        threshold: 0.2,
     });
 
     // State to control whether animations should play
@@ -91,7 +89,7 @@ const AboutMe = () => {
 export default AboutMe;
 
 const AboutMeCard = ({ data }) => {
-    return <div className='max-w-[320px] lg:max-w-[490px] z-30  backdrop-blur pt-4 pb-6 px-6 lg:px-12 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700'>
+    return <div className='max-w-[320px] lg:max-w-[490px] z-30   pt-4 pb-6 px-6 lg:px-12 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700'>
         <h2 className='Secordary-Title'>{data.title} </h2>
         <p className='small-text py-2 '><Balancer>
             {data.desc}
