@@ -4,16 +4,16 @@ import React from "react";
 
 const HireMeOnUpwork = () => {
   return (
-    <div className="py-40 flex justify-center items-center ">
+    <div className="py-40 px-4 flex justify-center items-center ">
       <div>
-        <h2 className="text-[48px] font-bold text-white text-center leading-tight ">
+        <h2 className="text-[36px] md:text-[48px] font-bold text-white text-center leading-tight ">
           Hire Me on <span className="text-[#00FF66]">Upwork</span> Your Next{" "}
-          <br /> Full-Stack Developer
+          <br className="md:block hidden" /> Full-Stack Developer
         </h2>
-        <p className=" text-center text-[#E6E6E6] pt-5 text-[16px]">
+        <p className=" text-center text-[#E6E6E6] pt-5 text-[14px] md:text-[16px]">
           Interested in collaborating on a project? Visit my Upwork profile to
-          view my portfolio, client <br /> reviews, and to get in touch for
-          potential opportunities. Let's create something amazing <br />{" "}
+          view my portfolio, client <br className="md:block hidden" /> reviews, and to get in touch for
+          potential opportunities. Let's create something amazing <br className="md:block hidden" />{" "}
           together!
         </p>
         <Link

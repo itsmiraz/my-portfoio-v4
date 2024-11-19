@@ -37,16 +37,16 @@ const Projects = () => {
             <ProjectCard animate={animate} i={i} key={i} data={data} />
           ))}
         </div>
-       <div className="flex justify-center items-center pt-4">
-       {ProjectsData.length > Limit && (
-          <button
-            onClick={handleLimit}
-            className="text-white bg-[#0002B3] text-center flex justify-center  px-3 py-1 rounded mt-4"
-          >
-            View More
-          </button>
-        )}
-       </div>
+        <div className="flex justify-center items-center pt-4">
+          {ProjectsData.length > Limit && (
+            <button
+              onClick={handleLimit}
+              className="bg-[#0065C2] text-white px-6 py-1.5 font-medium rounded-full mt-4"
+            >
+              View More
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -62,29 +62,31 @@ const ProjectCard = ({ data, i, animate }) => {
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: animate ? 1 : 0, x: animate ? 0 : -100 }}
       transition={{ duration: 0.2, delay: i * 0.2 }}
-      className="bg-[#000A1A] h-full  p-3 rounded-md"
+      className="bg-[#022330] overflow-hidden h-full  p-3 rounded-md"
     >
-      <div className="h-[250px] overflow-hidden">
-        <Image
-          width={700}
-          height={700}
-          className="w-full"
-          src={img}
-          alt={alt}
-        />
-      </div>
+      <div className="h-full pb-2 flex flex-col justify-between">
+        <div className="h-[250px] overflow-hidden">
+          <Image
+            width={700}
+            height={700}
+            className="w-full"
+            src={img}
+            alt={alt}
+          />
+        </div>
 
-      <div className="flex h-full flex-col justify-between rounded-b-md mt-2 ">
-        <h2 className="Secordary-Title">{title}</h2>
-        <p className="small-text pt-1">
-          {desc.length > 100 ? `${desc.slice(0, 100)}...` : desc}
-        </p>
-        <div className="flex-1 ">
-          <Link target="_blank" href={liveUrl}>
-            <button className="bg-[#0065C2] text-white px-6 py-1.5 font-medium rounded-full mt-4">
-              Check Live
-            </button>
-          </Link>
+        <div className="flex-1 flex  flex-col justify-between items-start rounded-b-md mt-2 ">
+          <h2 className="Secordary-Title">{title}</h2>
+          <p className="small-text pt-1">
+            {desc.length > 100 ? `${desc.slice(0, 100)}...` : desc}
+          </p>
+          <div className="flex flex-col justify-  w-full">
+            <Link target="_blank" href={liveUrl}>
+              <button className="bg-[#0065C2] text-white px-6 py-1.5 font-medium rounded-full mt-4">
+                Check Live
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </motion.div>
