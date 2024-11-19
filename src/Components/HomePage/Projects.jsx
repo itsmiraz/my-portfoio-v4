@@ -37,14 +37,16 @@ const Projects = () => {
             <ProjectCard animate={animate} i={i} key={i} data={data} />
           ))}
         </div>
-        {ProjectsData.length > Limit && (
+       <div className="flex justify-center items-center pt-4">
+       {ProjectsData.length > Limit && (
           <button
             onClick={handleLimit}
-            className="bg-[#0065C2] text-white px-3 py-1 rounded mt-4"
+            className="text-white bg-[#0002B3] text-center flex justify-center  px-3 py-1 rounded mt-4"
           >
             View More
           </button>
         )}
+       </div>
       </div>
     </div>
   );

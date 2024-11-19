@@ -379,21 +379,28 @@ export const ProjectsData = [
 
 export const ExperienceData = [
   {
+    jobTitle: "Full Stack Developer",
+    duration: "June-2023 - Present",
+    company: "Passionbits",
+    location: "Banglore, India",
+  },
+  {
+    jobTitle: "Founder & Developer",
+    duration: "Sept-223 - present",
+    company: "Resdium Digital",
+    location: "Bangladesh",
+  },
+  {
+    jobTitle: "Product Engineer",
+    duration: "May-2022 - January 2023",
+    company: "Whitepanda",
+    location: "Banglore, India",
+  },
+  {
     jobTitle: "Web Developer",
     duration: "Feb-2022 - May-2022",
     company: "Black Fox Metaverse",
     location: "Delhi, India",
   },
-  {
-    jobTitle: "Product Engineer",
-    duration: "May-2022 - Present",
-    company: "Whitepanda",
-    location: "Banglore, India",
-  },
-  {
-    jobTitle: "Founder & Lead Developer",
-    duration: "Sept-2022 - Present",
-    company: "Resdium Digital",
-    location: "Bangladesh",
-  },
+ 
 ];

@@ -3,6 +3,7 @@ import Experience from "@/Components/HomePage/Experience";
 import Hero from "@/Components/HomePage/Hero";
 import Projects from "@/Components/HomePage/Projects";
 import Contact from "@/Components/HomePage/contact";
+import HireMeOnUpwork from "@/Components/HomePage/hireMeOnUpwork";
 import SkillSet from "@/Components/HomePage/skillSet";
 import Head from "next/head";
 
@@ -44,6 +45,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <SkillSet />
+      <HireMeOnUpwork />
       <Contact />
     </>
   );
