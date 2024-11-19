@@ -1,6 +1,14 @@
 import resdium from "../../public/Assets/projects/resdium.webp";
 import shopNow from "../../public/Assets/projects/shop-now.webp";
 import expensetracker from "../../public/Assets/projects/expense-tracker.webp";
+import passionbits from "../../public/Assets/projects/passionbits.webp";
+import ball_0_cover from "../../public/Assets/projects/ball-0-cover.webp";
+import gamers_xp_cover from "../../public/Assets/projects/gamers-xp-cover.webp";
+import vfxion from "../../public/Assets/projects/vfxon-cover.webp";
+import kalitrip from "../../public/Assets/projects/kalitrip-cover.webp";
+import drjeff from "../../public/Assets/projects/dr.jeff.webp";
+import funnelVision from "../../public/Assets/projects/funnel-vision.webp";
+import missMuse from "../../public/Assets/projects/miss-muse-cover.webp";
 
 // Icons
 import facebook from "../../public/Assets/social-icons/Facebook.webp";
@@ -219,6 +227,62 @@ export const BackedEndTechs = [
 ];
 
 export const ProjectsData = [
+  {
+    img: passionbits,
+    title: "Passionbits",
+    alt: "passionbits-cover",
+    liveUrl: "https://passionbits.io/",
+    desc: "PassionBits is a global marketplace revolutionizing video production by connecting brands with top creators, actors, and video experts from every niche.",
+  },
+  {
+    img: gamers_xp_cover,
+    title: "Gamers Xp",
+    alt: "gamers-xp-cover",
+    liveUrl: "https://gamers-xp-landingpage.vercel.app/",
+    desc: "A platform that lets you play games, earn real rewards, and enhance your gaming journey with blockchain integration.",
+  },
+  {
+    img: funnelVision,
+    title: "Funnel Vision",
+    alt: "funnel-vision-cover",
+    liveUrl: "https://funnel-vision-landing-page.vercel.app/",
+    desc: "AI-powered platform that transforms your ideas into high-converting digital products and funnels in minutes.",
+  },
+  {
+    img: kalitrip,
+    title: "Kali Trip",
+    alt: "kali-trip-cover",
+    liveUrl: "https://kalitrip-website-design.vercel.app/",
+    desc: "AI-powered travel planning platform offering eco-friendly, personalized, and budget-friendly itineraries for cultural, nature, and adventure trips.",
+  },
+  {
+    img: ball_0_cover,
+    title: "Ball 0 Shot",
+    alt: "ball-0-shot-cover",
+    liveUrl: "https://ball-0-shot-landing-page-niyb.vercel.app/",
+    desc: "Eco-friendly drink spheres revolutionizing beverage experiences for events, sports, and everyday convenience.",
+  },
+  {
+    img: missMuse,
+    title: "Miss Muse",
+    alt: "miss-muse-cover",
+    liveUrl: "https://miss-muse-landing-page.vercel.app/",
+    desc: "Become a certified lash technician in just 3 days with hands-on training, ongoing support, and professional certification.",
+  },
+  {
+    img: vfxion,
+    title: "VFXION",
+    alt: "vfxion-cover",
+    liveUrl: "https://vfxion-landing-page.vercel.app/",
+    desc: "VFXion blends cutting-edge VFX/CGI with creative marketing to help you go viral and elevate your brand's presence.",
+  },
+  {
+    img: drjeff,
+    title: "DR. Jeff Sales Page",
+    alt: "dr-jeff-cover",
+    liveUrl: "https://dr-jeff.vercel.app/",
+    desc: "Take a 60-second quiz to uncover your personalized solution for sciatica relief and start your journey to pain-free living today!",
+  },
   {
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1703130668/Projects%20Images/whitepanda_pbbdgt.webp",
     title: "White Panda",
