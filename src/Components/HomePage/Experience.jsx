@@ -12,19 +12,15 @@ const Experience = () => {
       </p>
       <div className="flex md:flex-row flex-col  md:gap-0 mt-14">
         {ExperienceData.map((data, i) => (
-          <div className="flex justify-center items-center " key={i}>
+          <div className="flex justify-center w-full items-center " key={i}>
            <div className="block md:hidden">
             <DotLine/>
            </div>
-            {/* <Image
-              className="w-[120px] h-full rotate-90 "
-              src={line}
-              alt="proogress-line"
-            /> */}
-            <div className="text-white pl-4 w-full text-start">
+           
+            <div className="text-white pl-4 md:pl-0 w-full text-start">
               <p className="text-sm  ">{data.duration}</p>
               <Image
-                className="py-2   md:block hidden "
+                className="py-2   w-full   md:block hidden "
                 src={line}
                 alt="proogress-line"
               />

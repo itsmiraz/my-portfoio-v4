@@ -7,7 +7,7 @@ const HireMeOnUpwork = () => {
     <div className="py-40 px-4 flex justify-center items-center ">
       <div>
         <h2 className="text-[36px] md:text-[48px] font-bold text-white text-center leading-tight ">
-          Hire Me on <span className="text-[#00FF66]">Upwork</span> Your Next{" "}
+          Hire Me on <span className="text-[#1DBF73]">Fiverr</span> Your Next{" "}
           <br className="md:block hidden" /> Full-Stack Developer
         </h2>
         <p className=" text-center text-[#E6E6E6] pt-5 text-[14px] md:text-[16px]">
@@ -17,10 +17,10 @@ const HireMeOnUpwork = () => {
           together!
         </p>
         <Link
-          href={"https://www.upwork.com/freelancers/mirajh5?mp_source=share"}
+          href={"https://www.fiverr.com/s/VY6dy1x"}
         >
           <button className="text-center mx-auto  flex justify-center bg-gradient-to-r from-[#002B3C] to-[#011D27] border py-4 mt-6 px-10 text-white text-[18px] border-[#6971A2] rounded-[10px] ">
-            Visit my Upwork Profile
+            Visit my Fiverr Profile
           </button>
         </Link>
       </div>

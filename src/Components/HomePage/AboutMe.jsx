@@ -6,22 +6,23 @@ import { slideAnimation } from "@/lib/motion";
 
 const AboutMe = () => {
   const AboutMeConstans = [
-    {
-      title: "Who I am",
-      desc: "Hello, I`m Miraj Hossen, a passionate and innovative full-stack developer based in Bangladesh. At just 21x years old, I`ve already embarked on an exciting journey in the world of web development. I`m driven by my love for coding, creativity, and the ever-evolving tech landscape.",
-    },
-    {
-      title: "What I Do",
-      desc: "As a full-stack developer, I thrive in both front-end and back-end development, crafting seamless and user-friendly web applications. My toolbox includes a range of technologies and programming languages, and I relish the opportunity to tackle complex problems and turn ideas into robust, interactive digital experiences. ",
-    },
-    {
-      title: "My Journey",
-      desc: "My journey in the tech industry began at an early age, and it has been a fascinating adventure filled with continuous learning and growth. I started my coding journey as a teenager, and my passion for development has only intensified with time. I`ve dedicated countless hours to honing my skills, working on personal and collaborative projects.",
-    },
-    {
-      title: "My Goal",
-      desc: "Looking ahead, my goal is to make a meaningful impact in the world of web development. I aspire to contribute to innovative projects, create user-centric applications, and engage in collaborations that push the boundaries of technology. My ultimate aim is to become a respected figure in the tech community and inspire the next generation of developers from Bangladesh and beyond.",
-    },
+      {
+        "title": "Who I Am",
+        "desc": "I'm Miraj Hossen, a passionate full-stack developer from Bangladesh. At 21x years old, I thrive on coding, creativity, and innovation in web development."
+      },
+      {
+        "title": "What I Do",
+        "desc": "I build seamless, user-friendly web applications, handling both front-end and back-end development. I enjoy solving complex problems and bringing ideas to life."
+      },
+      {
+        "title": "My Journey",
+        "desc": "My coding journey began as a teenager, evolving into a passion for continuous learning and development. I've worked on diverse projects, sharpening my skills along the way."
+      },
+      {
+        "title": "My Goal",
+        "desc": "I aim to make an impact in web development, contribute to innovative projects, and inspire future developers, pushing technology’s boundaries."
+      }
+    
   ];
 
   const [sectionRef, inView] = useInView({
@@ -91,9 +92,9 @@ export default AboutMe;
 
 const AboutMeCard = ({ data }) => {
   return (
-    <div className="max-w-[320px] lg:max-w-[490px] z-30   pt-4 pb-6 px-6 lg:px-12 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700">
+    <div className="max-w-[320px] lg:max-w-[490px] z-30   pt-2 pb-6 px-6 lg:px-6 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700">
       <h2 className="Secordary-Title">{data.title} </h2>
-      <p className="small-text py-2 ">
+      <p className=" text-gray-200 pt-4">
         {data.desc}
       </p>
     </div>
