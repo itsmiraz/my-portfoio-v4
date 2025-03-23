@@ -295,11 +295,7 @@ export const FrontEndTechs = [
     url: "https://react.dev/",
     name: "React"
   },
-  {
-    img: javascript,
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    name: "JavaScript"
-  }
+ 
 ];
 
 export const BackedEndTechs = [
