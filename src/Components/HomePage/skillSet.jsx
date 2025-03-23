@@ -95,16 +95,23 @@ const SkillSet = () => {
 };
 
 export default SkillSet;
-
-const SkillCard = ({ data, animate, i }) => {
+const SkillCard = ({ data }) => {
   return (
     <div
-      className=" py-1 px-2 pr-4 bg-[#002D3E] min-w-[170px] items-center rounded-full text-white font-medium gap-4 w-fit flex"
+      className="relative cursor-pointer py-1 px-2 pr-4 bg-[#002D3E] min-w-[170px] items-center rounded-full text-white font-medium gap-4 w-fit flex overflow-hidden group"
     >
-    <div className="h-[50px] w-[50px] rounded-full  overflow-hidden">
+      {/* Shiny Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
+                     scale-150 rotate-12 translate-x-[-120%] group-hover:translate-x-[120%] 
+                     transition-transform duration-500 ease-in-out"></div>
+
+      {/* Image */}
+      <div className="h-[50px] w-[50px] rounded-full overflow-hidden">
         <Image src={data.img} className="object-cover w-full h-full" alt="miraj-skill" />
-    </div>
-        <p className="text-lg">{data.name}</p>
+      </div>
+
+      {/* Skill Name */}
+      <p className="text-lg">{data.name}</p>
     </div>
   );
 };

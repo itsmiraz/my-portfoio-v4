@@ -62,27 +62,31 @@ const ProjectCard = ({ data, i, animate }) => {
       initial={{ opacity: 0, x: -100 }}
       animate={{ opacity: animate ? 1 : 0, x: animate ? 0 : -100 }}
       transition={{ duration: 0.2, delay: i * 0.2 }}
-      className="bg-[#022330] overflow-hidden h-full  p-3 rounded-md"
+      className="bg-[#022330] overflow-hidden h-full p-3 rounded-md 
+                 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-lg hover:shadow-[#0065C2]/30"
     >
       <div className="h-full pb-2 flex flex-col justify-between">
-        <div className="h-[250px] overflow-hidden">
+        {/* Image Container with Zoom Effect */}
+        <div className="h-[250px] overflow-hidden rounded-md group">
           <Image
             width={700}
             height={700}
-            className="w-full"
+            className="w-full transition-transform duration-500 ease-in-out group-hover:scale-105"
             src={img}
             alt={alt}
           />
         </div>
 
-        <div className="flex-1 flex  flex-col justify-between items-start rounded-b-md mt-2 ">
+        {/* Content */}
+        <div className="flex-1 flex flex-col justify-between items-start rounded-b-md mt-2">
           <h2 className="Secordary-Title">{title}</h2>
           <p className="small-text pt-1">
             {desc.length > 100 ? `${desc.slice(0, 100)}...` : desc}
           </p>
-          <div className="flex flex-col justify-  w-full">
+          <div className="flex flex-col w-full">
             <Link target="_blank" href={liveUrl}>
-              <button className="bg-[#0065C2] text-white px-6 py-1.5 font-medium rounded-full mt-4">
+              <button className="bg-[#0065C2] text-white px-6 py-1.5 font-medium rounded-full mt-4 
+                                 transition-all duration-300 ease-in-out hover:bg-[#004C91]">
                 Check Live
               </button>
             </Link>
@@ -92,3 +96,4 @@ const ProjectCard = ({ data, i, animate }) => {
     </motion.div>
   );
 };
+
