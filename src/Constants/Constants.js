@@ -33,17 +33,34 @@ import redux from "../../public/Assets/Front-end/redux.webp";
 import tailwind from "../../public/Assets/Front-end/tailwind.webp";
 import tanstack from "../../public/Assets/Front-end/tanstack-query.webp";
 import router from "../../public/Assets/Front-end/react-router.webp";
+import typeScript from "../../public/Assets/Front-end/typescript.png";
+import pwa from "../../public/Assets/Front-end/pwa.png";
+
+
 
 //Backend Techs
 import nodejs from "../../public/Assets/Backend/nodejs.webp";
 import mongodb from "../../public/Assets/Backend/mongodb.webp";
 import express from "../../public/Assets/Backend/express.webp";
 import jwt from "../../public/Assets/Backend/jwt.webp";
+import mongoose from "../../public/Assets/Backend/mongosse.png";
+import passportjs from "../../public/Assets/Backend/passportjs.png";
+import nodeMailer from "../../public/Assets/Backend/nodemailer.png";
 
 // Dev Ops
 import nginx from "../../public/Assets/dev-ops/nginx.webp";
 import pm2 from "../../public/Assets/dev-ops/pm2.webp";
 import ubontu from "../../public/Assets/dev-ops/ubontu.webp";
+import githubActions from "../../public/Assets/dev-ops/githubActions.png";
+import vps  from "../../public/Assets/dev-ops/VPS.png";
+
+// aws
+import Ec2 from "../../public/Assets/aws/ec2.png";
+import s3 from "../../public/Assets/aws/s3.png";
+import sqs from "../../public/Assets/aws/sqs.png";
+import ses from "../../public/Assets/aws/ses.png";
+import route35 from "../../public/Assets/aws/route53.png";
+import cloudfront from "../../public/Assets/aws/cloudfront-cdn.png";
 
 // Others
 import figma from "../../public/Assets/others/figma.webp";
@@ -94,139 +111,230 @@ export const ToolsConstant = [
   {
     img: bitbucket,
     url: "https://bitbucket.org/product",
+    name: "Bitbucket"
   },
-
   {
     img: github,
     url: "https://github.com/",
+    name: "GitHub"
   },
   {
     img: postman,
     url: "https://www.postman.com/",
+    name: "Postman"
   },
-  {
-    img: npm,
-    url: "https://www.npmjs.com/",
-  },
-  {
-    img: vscode,
-    url: "https://code.visualstudio.com/",
-  },
-  {
-    img: slack,
-    url: "https://slack.com/",
-  },
-  {
-    img: yarn,
-    url: "https://yarnpkg.com/",
-  },
-];
-
-export const AuthTech = [
-  {
-    img: firebase,
-    url: "https://firebase.google.com/",
-  },
-
-  {
-    img: auth0,
-    url: "https://auth0.com/",
-  },
-];
-
-export const othersTech = [
   {
     img: figma,
     url: "https://www.figma.com/",
+    name: "Figma"
   },
   {
     img: photoshop,
     url: "https://www.adobe.com/products/photoshop.html",
+    name: "Photoshop"
   },
+  {
+    img: npm,
+    url: "https://www.npmjs.com/",
+    name: "NPM"
+  },
+  {
+    img: vscode,
+    url: "https://code.visualstudio.com/",
+    name: "VS Code"
+  },
+  {
+    img: slack,
+    url: "https://slack.com/",
+    name: "Slack"
+  },
+  {
+    img: yarn,
+    url: "https://yarnpkg.com/",
+    name: "Yarn"
+  }
 ];
+
+export const programming_languages = [
+  {
+    img: typeScript,
+    name: "TypeScript"
+  },
+  {
+    img: javascript,
+    name: "Javascript"
+  },
+ 
+];
+
+
+
+
 
 export const DevOps = [
   {
     img: nginx,
     url: "https://www.nginx.com/",
+    name: "NGINX"
   },
   {
     img: pm2,
     url: "https://pm2.keymetrics.io/",
+    name: "PM2"
   },
   {
     img: ubontu,
     url: "https://ubuntu.com/",
+    name: "Ubuntu"
   },
+  {
+    img: githubActions,
+    name: "Ci/Cd with Github Actions"
+  },
+  {
+    img: vps,
+    name: "Virtual Private Server (VPS)"
+  },
+];
+export const aws = [
+  {
+    img: Ec2,
+    name: "Ec2"
+  },
+  {
+    img: s3,
+    name: "S3 Bucket"
+  },
+  {
+    img: ses,
+    name: "Amazon Simple Email"
+  },
+  {
+    img: cloudfront,
+    name: "Cloudfront CDN "
+  },
+  {
+    img: route35,
+    name: "Route 35"
+  },
+  {
+    img: sqs,
+    name: "Amazon Message Queuing Service"
+  },
+  
 ];
 
 export const FrontEndTechs = [
   {
     img: nexjts,
     url: "https://nextjs.org/",
+    name: "Next.js"
   },
   {
     img: redux,
     url: "https://redux.js.org/",
+    name: "Redux"
   },
   {
     img: tailwind,
     url: "https://tailwindcss.com/",
+    name: "Tailwind CSS"
   },
   {
     img: tanstack,
     url: "https://tanstack.com/query/latest",
+    name: "TanStack Query"
   },
   {
     img: vitejs,
     url: "https://vitejs.dev/",
+    name: "Vite.js"
   },
   {
     img: bootstrap,
     url: "https://getbootstrap.com/",
+    name: "Bootstrap"
+  },
+  {
+    img: pwa,
+    url: "https://getbootstrap.com/",
+    name: "PWA"
   },
   {
     img: css3,
     url: "https://www.w3schools.com/css/",
+    name: "CSS3"
   },
   {
     img: router,
     url: "https://reactrouter.com/en/main",
+    name: "React Router"
   },
   {
     img: framermotion,
     url: "https://www.framer.com/motion/",
+    name: "Framer Motion"
   },
   {
     img: html5,
     url: "https://www.w3schools.com/html/",
+    name: "HTML5"
+  },
+  {
+    img: firebase,
+    url: "https://firebase.google.com/",
+    name: "Firebase"
+  },
+  {
+    img: auth0,
+    url: "https://auth0.com/",
+    name: "Auth0"
   },
   {
     img: react,
     url: "https://react.dev/",
+    name: "React"
   },
   {
     img: javascript,
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
+    name: "JavaScript"
+  }
 ];
+
 export const BackedEndTechs = [
   {
     img: nodejs,
     url: "https://nodejs.org/en",
+    name: "Node.js"
   },
   {
     img: mongodb,
     url: "https://www.mongodb.com/",
+    name: "MongoDB"
+  },
+  {
+    img: mongoose,
+    name: "Mongoose"
+  },
+  {
+    img: passportjs,
+    name: "PassportJS"
+  },
+  {
+    img: nodeMailer,
+    name: "Node Mailer"
   },
   {
     img: express,
     url: "https://expressjs.com/",
+    name: "Express.js"
   },
   {
     img: jwt,
     url: "https://jwt.io/",
-  },
+    name: "JWT"
+  }
 ];
 
 export const ProjectsData = [
