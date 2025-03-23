@@ -9,6 +9,9 @@ import kalitrip from "../../public/Assets/projects/kalitrip-cover.webp";
 import drjeff from "../../public/Assets/projects/dr.jeff.webp";
 import funnelVision from "../../public/Assets/projects/funnel-vision.webp";
 import missMuse from "../../public/Assets/projects/miss-muse-cover.webp";
+import mailEditor from "../../public/Assets/projects/maileditior.webp";
+import valueHomeRemodelling from "../../public/Assets/projects/value-home-remodelling.webp";
+import storyVerse from "../../public/Assets/projects/story-verse.webp";
 
 // Icons
 import facebook from "../../public/Assets/social-icons/Facebook.webp";
@@ -291,6 +294,13 @@ export const ProjectsData = [
     desc: "White Panda is indian startup based on Bangluru. It has 50+ pages built on nextjs",
   },
   {
+    img: mailEditor,
+    title: "Mail Editor",
+    alt: "maileditor-cover",
+    liveUrl: "https://maileditor.vercel.app/",
+    desc: "Mail Editor is a sleek and responsive landing page built using Next.js for a web-based email editor application. It showcases the app's features and functionality with a clean, modern design.",
+  },
+  {
     img: resdium,
     title: "RESDIUM",
     alt: "resdium-cover",
@@ -303,6 +313,13 @@ export const ProjectsData = [
     alt: "fit-advice-cover",
     liveUrl: "https://fitadvice.eu/",
     desc: "Fit Advice is a landing page for and mobile app called FitAdvice. That helps with fitness.",
+  },
+  {
+    img: valueHomeRemodelling,
+    title: "Value Home Remodeling",
+    alt: "valueHomeRemodelling-cover",
+    liveUrl: "https://value-home-remodel-landing-page.vercel.app/",
+    desc: "Value Home Remodeling is a professionally designed landing page built with Next.js for a carpentry and home renovation company.",
   },
   {
     img: "https://res.cloudinary.com/djnlyzsmv/image/upload/v1704793946/nenox-shop-min_dzaq6w.webp",
@@ -325,6 +342,13 @@ export const ProjectsData = [
 
     liveUrl: "https://shop-now-8e94f.web.app/",
     desc: "Shop Now is E-commerce website. That has stripe payment system..",
+  },
+  {
+    img: storyVerse,
+    title: "Story Verse",
+    alt: "story-verse-cover",
+    liveUrl: "https://storyverse.vercel.app/",
+    desc: "Story Verse is a beautifully crafted landing page built with Next.js for a blogging platform.",
   },
   {
     img: expensetracker,
