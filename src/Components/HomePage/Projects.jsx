@@ -63,7 +63,7 @@ const ProjectCard = ({ data, i, animate }) => {
       animate={{ opacity: animate ? 1 : 0, x: animate ? 0 : -100 }}
       transition={{ duration: 0.2, delay: i * 0.2 }}
       className="bg-[#022330] overflow-hidden h-full p-3 rounded-md 
-                 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-lg hover:shadow-[#0065C2]/30"
+                 transition-all duration-300 ease-in-out transform hover:scale-[1.02] "
     >
       <div className="h-full pb-2 flex flex-col justify-between">
         {/* Image Container with Zoom Effect */}

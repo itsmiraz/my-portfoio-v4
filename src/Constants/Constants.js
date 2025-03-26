@@ -260,26 +260,7 @@ export const FrontEndTechs = [
     url: "https://getbootstrap.com/",
     name: "PWA"
   },
-  {
-    img: css3,
-    url: "https://www.w3schools.com/css/",
-    name: "CSS3"
-  },
-  {
-    img: router,
-    url: "https://reactrouter.com/en/main",
-    name: "React Router"
-  },
-  {
-    img: framermotion,
-    url: "https://www.framer.com/motion/",
-    name: "Framer Motion"
-  },
-  {
-    img: html5,
-    url: "https://www.w3schools.com/html/",
-    name: "HTML5"
-  },
+ 
   {
     img: firebase,
     url: "https://firebase.google.com/",
