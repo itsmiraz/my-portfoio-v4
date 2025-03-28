@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/no-unescaped-entities */
 
 import React, { useEffect, useState } from "react";
@@ -40,26 +41,29 @@ const Hero = () => {
     <section
       id="home"
       ref={sectionRef}
-      className="relative flex px-20 items-center  mt-6 py-40  lg:mt-10 z-30"
+      className="relative md:flex-row flex-col justify-between flex px-4 md:px-20 items-center  mt-6 py-40  lg:mt-10 z-30"
     >
       <div className="text-white">
-        <h4 className="text-[36px] fira_code_font">Hi there;</h4>
-        <h1 className="text-[64px] fira_code_font font-semibold">I am Miraj</h1>
-        <p className="text-[30px] fira_code_font">
-          I build fast, user-friendly websites <br />
-          and web apps. Whether you're looking <br />
-          for a developer to join your team or <br /> need a project built
+        <h4 className="text-[36px] ">Hi there ;</h4>
+        <h1 className="text-[64px]  font-semibold">I am Miraj</h1>
+        <p className="text-[24px] mt-5">
+          I build fast, user-friendly websites <br className="hidden md:block" />
+          and web apps. Whether you're looking <br className="hidden md:block" />
+          for a developer to join your team or <br className="hidden md:block" /> need a project built
         </p>
+        <div>
+       
+        </div>
       </div>
       <div className="relative w-[50%]">
         <Image
           src={BlueGlow}
-          className="absolute -top-[400px] animate-glow"
+          className="absolute -top-[400px]  animate-glow"
           alt=""
         />
         <Image
           src={TintGLow}
-          className="absolute rotate-45 -top-[300px] animate-glow-alt"
+          className="absolute rotate-45 right-7 -top-[300px] animate-glow-alt"
           alt="t"
         />
       </div>
