@@ -41,70 +41,70 @@ const Hero = () => {
     <section
       id="home"
       ref={sectionRef}
-      className="relative md:flex-row flex-col justify-between flex px-4 md:px-20 items-center  mt-6 py-40  lg:mt-10 z-30"
+     className='relative overflow-hidden mt-6 lg:mt-10 z-30'
     >
-      <div className="text-white">
-        <h4 className="text-[36px] ">Hi there ;</h4>
-        <h1 className="text-[64px]  font-semibold">I am Miraj</h1>
-        <p className="text-[24px] mt-5">
-          I build fast, user-friendly websites <br className="hidden md:block" />
-          and web apps. Whether you're looking <br className="hidden md:block" />
-          for a developer to join your team or <br className="hidden md:block" /> need a project built
-        </p>
-        <div>
-       
-        </div>
+      <div className="absolute z-30 w-full h-full">
+        <motion.h2
+          initial="initial"
+          animate={animate ? "animate" : "initial"}
+          exit="exit"
+          variants={slideAnimation("left")}
+          className="heroTitle  absolute left-[10%] lg:left-[20%]  top-[30%]"
+        >
+          <TextTransition springConfig={presets.wobbly}>
+            {TEXTS[index % TEXTS.length]}
+          </TextTransition>
+        </motion.h2>
+        <motion.h2
+          initial="initial"
+          animate={animate ? "animate" : "initial"}
+          exit="exit"
+          variants={slideAnimation("left")}
+          className=" heroTitle absolute right-[12%] lg:right-[17%] top-[50%] lg:top-[35%]"
+        >
+          -END
+        </motion.h2>
+        <motion.h2
+          initial="initial"
+          animate={animate ? "animate" : "initial"}
+          exit="exit"
+          variants={slideAnimation("right")}
+          className="heroTitle absolute right-[10%]  lg:right-[15%] bottom-10 md:bottom-20 lg:bottom-40"
+        >
+          DEVELOPER
+        </motion.h2>
+        <motion.div
+          initial="initial"
+          animate={animate ? "animate" : "initial"}
+          exit="exit"
+          variants={slideAnimation("down")}
+        >
+          <Image
+            lazy="false"
+            loading="eager"
+            className="absolute  right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]"
+            src={heroimg}
+            alt="miraj-hossen"
+          ></Image>
+        </motion.div>
       </div>
-      <div className="relative w-[50%]">
+
+      <motion.div
+        initial="initial"
+        animate={animate ? "animate" : "initial"}
+        exit="exit"
+        variants={slideAnimation("down")}
+      >
         <Image
-          src={BlueGlow}
-          className="absolute -top-[400px]  animate-glow"
-          alt=""
+          lazy="false"
+          loading="eager"
+          className="mx-auto p-3 lg:p-10"
+          src={blueBgOverlay}
+          alt="blue-bg-overlay-miraj-hossen"
         />
-        <Image
-          src={TintGLow}
-          className="absolute rotate-45 right-7 -top-[300px] animate-glow-alt"
-          alt="t"
-        />
-      </div>
+      </motion.div>
     </section>
   );
 };
 
 export default Hero;
-
-// <div className='absolute z-30 w-full h-full' >
-// <motion.h2
-//     initial='initial'
-//     animate={animate ? 'animate' : 'initial'}
-//     exit='exit'
-//     variants={slideAnimation('left')}
-//     className='heroTitle  absolute left-[10%] lg:left-[20%]  top-[30%]'><TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition></motion.h2>
-// <motion.h2
-//     initial='initial'
-//     animate={animate ? 'animate' : 'initial'}
-//     exit='exit'
-//     variants={slideAnimation('left')}
-//     className=' heroTitle absolute right-[12%] lg:right-[17%] top-[50%] lg:top-[35%]'>-END</motion.h2>
-// <motion.h2
-//     initial='initial'
-//     animate={animate ? 'animate' : 'initial'}
-//     exit='exit'
-//     variants={slideAnimation('right')}
-//     className='heroTitle absolute right-[10%]  lg:right-[15%] bottom-10 md:bottom-20 lg:bottom-40'>DEVELOPER</motion.h2>
-// <motion.div
-//     initial='initial'
-//     animate={animate ? 'animate' : 'initial'}
-//     exit='exit'
-//     variants={slideAnimation('down')}>
-//     <Image lazy='false' loading='eager' className='absolute  right-[30%] top-4 lg:top-20 lg:w-[25%] w-[40%]' src={heroimg} alt='miraj-hossen' ></Image>
-// </motion.div>
-// </div>
-
-// <motion.div
-// initial='initial'
-// animate={animate ? 'animate' : 'initial'}
-// exit='exit'
-// variants={slideAnimation('down')}>
-// <Image lazy='false' loading='eager' className='mx-auto p-3 lg:p-10' src={blueBgOverlay} alt='blue-bg-overlay-miraj-hossen' />
-// </motion.div>
