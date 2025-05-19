@@ -12,6 +12,9 @@ import missMuse from "../../public/Assets/projects/miss-muse-cover.webp";
 import mailEditor from "../../public/Assets/projects/maileditior.webp";
 import valueHomeRemodelling from "../../public/Assets/projects/value-home-remodelling.webp";
 import storyVerse from "../../public/Assets/projects/story-verse.webp";
+import vortexExpert from "../../public/Assets/projects/vortext.webp";
+import TenthDigital from "../../public/Assets/projects/10th.webp";
+import resortWebsite from "../../public/Assets/projects/resort-website.webp";
 
 // Icons
 import facebook from "../../public/Assets/social-icons/Facebook.webp";
@@ -330,6 +333,20 @@ export const ProjectsData = [
     desc: "A platform that lets you play games, earn real rewards, and enhance your gaming journey with blockchain integration.",
   },
   {
+    img: vortexExpert,
+    title: "Vortex Expert",
+    alt: "vortex-expert-cover",
+    liveUrl: "https://vortext-expert-landing-page.vercel.app/",
+    desc: "Designed and developed a modern, conversion-focused website for VortExpert — a full-stack digital agency that helps innovators, startups, SMEs, and corporations build, launch, and scale their businesses.",
+  },
+  {
+    img: resortWebsite,
+    title: "Resort Website",
+    alt: "funnel-vision-cover",
+    liveUrl: "https://resort-demo-website-by-resdium.vercel.app/",
+    desc: "This is a demo website for a resort company. It has some nice slick animation and super fast loading speed. ",
+  },
+  {
     img: funnelVision,
     title: "Funnel Vision",
     alt: "funnel-vision-cover",
@@ -356,6 +373,13 @@ export const ProjectsData = [
     alt: "miss-muse-cover",
     liveUrl: "https://miss-muse-landing-page.vercel.app/",
     desc: "Become a certified lash technician in just 3 days with hands-on training, ongoing support, and professional certification.",
+  },
+  {
+    img: TenthDigital,
+    title: "10th Planet Jiu-Jitsu",
+    alt: "vfxion-cover",
+    liveUrl: "http://10th-planet-landing-page.vercel.app/",
+    desc: "A modern, responsive website built for 10th Planet Montreal to showcase their no-gi Brazilian Jiu-Jitsu program.",
   },
   {
     img: vfxion,
