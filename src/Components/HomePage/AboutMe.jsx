@@ -94,7 +94,7 @@ const AboutMeCard = ({ data }) => {
   return (
     <div className="max-w-[320px] lg:max-w-[490px] z-30   pt-2 pb-6 px-6 lg:px-6 rounded w-full bg-[#010f161f]  border-2 border-opacity-30 border-gray-700">
       <h2 className="Secordary-Title">{data.title} </h2>
-      <p className=" text-gray-200 pt-4">
+      <p className=" text-gray-200 md:text-lg text-sm pt-4">
         {data.desc}
       </p>
     </div>
