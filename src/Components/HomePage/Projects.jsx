@@ -71,12 +71,11 @@ const ProjectCard = ({ data, i, animate }) => {
           <h2 className="text-3xl font-semibold text-white pt-3 pb-2">{title}</h2>
           <p className="small-text">
             {desc.length > 100 ? `${desc.slice(0, 100)}...` : desc}
-          </p>
-          <div className="flex flex-col w-full">
+          </p> 
+          <div className="flex mt-3 flex-col w-full">
             <Link target="_blank" href={liveUrl}>
               <button
-                className="bg-[#0065C2] w-full  text-white px-6 py-3 font-medium rounded-full mt-4 
-                                 transition-all text-lg duration-300 ease-in-out hover:bg-[#004C91]"
+                className="bg-[#0065C2] w-full  text-white px-6 py-2 md:py-3 font-medium rounded-full mt-4  transition-all text-lg duration-300 ease-in-out hover:bg-[#004C91]"
               >
                 Check Live
               </button>

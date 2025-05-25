@@ -98,7 +98,7 @@ export default SkillSet;
 const SkillCard = ({ data }) => {
   return (
     <div
-      className="relative cursor-pointer py-1 px-2 pr-4 bg-[#002D3E] min-w-[170px] items-center rounded-full text-white font-medium gap-4 w-fit flex overflow-hidden group"
+      className="relative cursor-pointer py-1 px-2 pr-4 bg-[#002D3E] md:min-w-[170px] items-center rounded-full text-white font-medium gap-4 w-fit flex overflow-hidden group"
     >
       {/* Shiny Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent 
