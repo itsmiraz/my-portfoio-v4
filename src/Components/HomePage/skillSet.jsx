@@ -106,12 +106,12 @@ const SkillCard = ({ data }) => {
                      transition-transform duration-500 ease-in-out"></div>
 
       {/* Image */}
-      <div className="h-[50px] w-[50px] rounded-full overflow-hidden">
+      <div className=" h-[30px] md:h-[50px]  w-[30px] md:w-[50px] rounded-full overflow-hidden">
         <Image src={data.img} className="object-cover w-full h-full" alt="miraj-skill" />
       </div>
 
       {/* Skill Name */}
-      <p className="text-lg">{data.name}</p>
+      <p className="text-sm md:text-lg">{data.name}</p>
     </div>
   );
 };
